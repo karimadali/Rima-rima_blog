@@ -10,8 +10,8 @@ navbar:
     - text: "About Me"
       href: "posts/about/index.html"
     - icon: fab fa-github
-      href: https://github.com/Rima/rima-blog
-base_url: rima.github.io/rima_blog/
+      href: https://github.com/karimadali/Rima-rima-blog
+base_url: karimadali.github.io/Rima-rima-blog/
 collections:
     posts:
       share: [twitter, linkedin, facebook]
