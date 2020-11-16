@@ -1,11 +1,13 @@
 ---
 title: "About Me"
 author:
-  - name: "___" 
-date: "`r Sys.Date()`"
+  - name: "rima_blog" 
+date: "r sys. Date("16/11/2020")"
 output: distill::distill_article
 ---
 
 This section must bu include a short presentation of you.
 
 - first name/surname, teacher’s name, class name and academic year
+
+- karima, Nicolas DEVILEZ, complimentary bloc, 2020/2021
