@@ -14,6 +14,7 @@ navbar:
 base_url: karimadali.github.io/Rima-rima-blog/
 collections:
     posts:
+    disqus: rima-rima-blog
       share: [twitter, linkedin, facebook]
       #disqus: 
 output:
