@@ -1,0 +1,57 @@
+---
+title: "urchin"
+author: "karima DALIL"
+date: "21/12/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+# Introduction
+Humans in different cultures have used sea urchins as a source of food, and the part of the sea urchin consumed is typically the female gonads.The annual consumption of sea urchins has been steadily increasing in recent years, many countries are facing the problem of overexploitation of stocks, so sea urchin aquaculture seems to be a promising way to solve this problem so which one is best in the term of quality?
+
+```{r}
+SciViews::R
+```
+
+
+```{r}
+data <- read("urchin_bio", package = "data.io")
+```
+
+```{r}
+chart(data = urchin_bio, ~ gonads %fill=% origin) +
+  geom_density(na.rm = TRUE) 
+  
+``` 
+
+The graph expresses the density of the gonads according to the origin of the sea urchins.
+We notice that the density of urchin elevated in farms is greater than fishy one. We can conclude that the aquaculture offers the best quality of urchins.
+
+
+
+
+
